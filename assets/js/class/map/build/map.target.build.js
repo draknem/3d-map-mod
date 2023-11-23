@@ -76,7 +76,7 @@ export default class{
             // plane
             const plane = this.createPlaneMesh(i)
             plane.position.y = -(1 / (Math.sqrt(3) * 2)) * this.param.size / 2
-            plane.position.z = this.param.length + this.param.planeHeight / 2
+            plane.position.z = this.param.length + this.param.planeHeight / 2 - 60
             plane.rotation.x = 90 * RADIAN
             moveGroup.add(plane)
 
