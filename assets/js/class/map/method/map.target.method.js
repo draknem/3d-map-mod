@@ -78,7 +78,7 @@ export default {
         // ctx.fillText(~~(window.performance.now()), width / 2, height / 2)
         ctx.fillText(txt1, width / 2, height / 2)
         ctx.fillText(txt1, width / 2, height / 2)
-        ctx.fillText(txt2, width / 2, height / 2 - fontSize)
-        ctx.fillText(txt2, width / 2, height / 2 - fontSize)
+        ctx.fillText(txt2, width / 2, height / 2 - 40)
+        ctx.fillText(txt2, width / 2, height / 2 - 40)
     }
 }
