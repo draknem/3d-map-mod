@@ -5,9 +5,9 @@ export default class{
         this.parentElement = document.querySelector('.open')
         this.element = document.querySelector('.open-element-container')
 
-        //this.modules = {
-        //    text: TEXT,
-        //}
+        this.modules = {
+            text: TEXT,
+        }
 
         this.comp = {}
 
