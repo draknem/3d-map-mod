@@ -46,7 +46,7 @@ export default class{
 
     // create
     create(){
-        this.el = this.texts.map((text, i) => ({
+        /*this.el = this.texts.map((text, i) => ({
             key: i,
             text,
             loading: '',
@@ -56,7 +56,7 @@ export default class{
             },
             timer: Math.random() * 900 + 100,
             done: i === this.len - 1 ? '' : 'ok'
-        }))
+        }))*/
     }
 
 
