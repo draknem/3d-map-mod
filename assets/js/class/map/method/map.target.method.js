@@ -69,16 +69,16 @@ export default {
     drawCanvasTexture(ctx, txt1, txt2, {font, fontColor, fontSize}){
         const {width, height} = ctx.canvas
 
-        ctx.clearRect(0, 0, width, height)
+        ctx.clearRect(0, 0, width*4, height*4)
 
-        ctx.font = `${fontSize} ${font}`
+        ctx.font = `normal 900 ${fontSize} ${font}`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'middle'
         ctx.fillStyle = fontColor
         // ctx.fillText(~~(window.performance.now()), width / 2, height / 2)
         ctx.fillText(txt1, width / 2, height / 2)
         ctx.fillText(txt1, width / 2, height / 2)
-        ctx.fillText(txt2, width / 2, height / 2 - 10)
-        ctx.fillText(txt2, width / 2, height / 2 - 10)
+        ctx.fillText(txt2, width / 2, height / 2 - fontSize)
+        ctx.fillText(txt2, width / 2, height / 2 - fontSize)
     }
 }
