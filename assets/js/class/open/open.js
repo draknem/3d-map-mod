@@ -1,4 +1,4 @@
-//import TEXT from './build/open.text.build.js'
+import TEXT from './build/open.text.build.js'
 
 export default class{
     constructor({map}){
