@@ -71,7 +71,7 @@ export default {
 
         ctx.clearRect(0, 0, width*4, height*4)
 
-        ctx.font = `normal 900 ${fontSize} ${font}`
+        ctx.font = `normal 1000 ${fontSize} ${font}`
         ctx.textAlign = 'center'
         ctx.textBaseline = 'middle'
         ctx.fillStyle = fontColor
