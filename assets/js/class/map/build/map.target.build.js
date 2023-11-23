@@ -21,10 +21,10 @@ export default class{
                 0 // effect
             ],
             length: 100,
-            planeWidth: ~~(1920 * 0.02),
-            planeHeight: ~~(1080 * 0.03),
+            planeWidth: ~~(1920 * 0.08),
+            planeHeight: ~~(1080 * 0.12),
             font: 'OpenSansRegular',
-            fontSize: '10px',
+            fontSize: '40px',
             fontColor: '#ff3232'
         }
 
@@ -278,7 +278,7 @@ export default class{
 
         moveGroup.position.set(start.x, start.y, 0)
         line.geometry.setDrawRange(0, currentDist / dist * line.geometry.draw)
-
+        moveGroup.children[2].scale.set(0.125,0.125,1)
         moveGroup.children[2].lookAt(this.camera.position)
         METHOD.drawCanvasTexture(this.ctx[idx], currentDist.toFixed(2), 'F - ' + idx, this.param)
         this.texture[idx].needsUpdate = true
